@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare App - Arogya Sathi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Arogya Sathi</h1>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <main>
+        <!-- Login Panel -->
+        <section id="login">
+            <h2>Login Panel</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Doctor Appointment Section -->
+        <section id="appointments">
+            <h2>Book Doctor Appointment</h2>
+            <label for="doctorType">Select Doctor Type:</label>
+            <select id="doctorType">
+                <option value="general">General Physician</option>
+                <option value="cardiologist">Cardiologist</option>
+                <option value="neurologist">Neurologist</option>
+                <option value="dermatologist">Dermatologist</option>
+            </select>
+
+            <label for="appointmentDate">Choose Date:</label>
+            <input type="date" id="appointmentDate" required>
+
+            <button id="bookAppointment">Book Appointment</button>
+        </section>
+
+        <!-- Emergency Services -->
+        <section id="emergency">
+            <h2>Emergency Services</h2>
+            <button id="emergencyContact">Contact Emergency</button>
+            <button id="findHospital">Find Nearest Hospital</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Arogya Sathi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabad Hospitals - Arogya Sathi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hospitals in Hyderabad</h1>
+        <input type="text" id="searchBar" placeholder="Search hospitals by name..." onkeyup="searchHospitals()">
+    </header>
+
+    <main>
+        <section id="hospitalList">
+            <!-- Hospitals will be dynamically injected here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Arogya Sathi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare App - Arogya Sathi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Arogya Sathi - Healthcare Services</h1>
+    </header>
+
+    <main>
+        <!-- Pharmacy Services -->
+        <section id="pharmacy">
+            <h2>24/7 Pharmacy Services</h2>
+            <p>We offer 24/7 medicine delivery to your doorstep. Get medicines anytime from our partnered pharmacies.</p>
+            <button id="orderMedicine">Order Medicine</button>
+        </section>
+
+        <!-- Diagnostic Centers -->
+        <section id="diagnosticCenters">
+            <h2>Diagnostic Centers Access</h2>
+            <p>Find diagnostic centers across India and book your tests online.</p>
+            <button id="findDiagnostics">Find Diagnostic Centers</button>
+        </section>
+
+        <!-- Online Doctor Consultation -->
+        <section id="onlineConsultation">
+            <h2>24/7 Online Doctor Consultation</h2>
+            <p>Consult with a doctor 24/7 from the comfort of your home. Get instant advice and treatment.</p>
+            <button id="consultDoctor">Consult a Doctor</button>
+        </section>
+
+        <!-- Diet Plans and Problem Care -->
+        <section id="dietPlans">
+            <h2>Diet Plans & Specific Problem Care</h2>
+            <p>Get a personalized diet plan under the guidance of certified doctors for specific health problems.</p>
+            <button id="getDietPlan">Get Diet Plan</button>
+        </section>
+
+        <!-- Insurance Carrier Plans -->
+        <section id="insurancePlans">
+            <h2>Insurance Carrier Plans</h2>
+            <p>Explore insurance carrier plans with options to cover your treatments under insurance doctors’ guidance.</p>
+            <button id="checkInsurance">Check Insurance Plans</button>
+        </section>
+
+        <!-- Budgeting for Healthcare -->
+        <section id="budgeting">
+            <h2>Budgeting for Healthcare</h2>
+            <p>We provide you with all the necessary financial information to help you budget for medical treatments and medications.</p>
+            <button id="getBudgetInfo">Get Financial Info</button>
+        </section>
+
+        <!-- Cost Management Options -->
+        <section id="costManagement">
+            <h2>Cost Management Options</h2>
+            <p>We offer details on payment plans, financial assistance programs, and alternatives for lower-cost medications.</p>
+            <button id="getCostOptions">Get Cost Management Options</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Arogya Sathi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency App - Arogya Sathi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Emergency Services - Arogya Sathi</h1>
+    </header>
+
+    <main>
+        <!-- Rapid Access to Care -->
+        <section id="rapidAccess">
+            <h2>Rapid Access to Care</h2>
+            <p>Immediate access to hospitals or clinics for emergency services. Contact nearby healthcare providers quickly.</p>
+            <button id="contactHospital">Contact Hospital</button>
+        </section>
+
+        <!-- Real-Time Communication -->
+        <section id="realTimeComm">
+            <h2>Real-Time Communication</h2>
+            <p>Facilitates real-time communication between patients and healthcare providers, ensuring timely information exchange.</p>
+            <button id="startCommunication">Start Communication</button>
+        </section>
+
+        <!-- Resource Management -->
+        <section id="resourceManagement">
+            <h2>Resource Management</h2>
+            <p>Track available medical staff, equipment, and hospital beds in real-time to ensure efficient resource allocation.</p>
+            <button id="checkResources">Check Available Resources</button>
+        </section>
+
+        <!-- Emergency Contact Button -->
+        <section id="emergencyContact">
+            <h2>Emergency Contact</h2>
+            <p>Call emergency services or your designated hospital with a single tap for immediate assistance.</p>
+            <button id="callEmergency">Call Emergency</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Arogya Sathi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare App - Profiles & Features</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Arogya Sathi - User Profiles & Telemedicine</h1>
+    </header>
+
+    <main>
+        <!-- User Profiles -->
+        <section id="userProfiles">
+            <h2>User Profiles</h2>
+            <div>
+                <h3>Patient Profile</h3>
+                <p>Name: John Doe</p>
+                <p>Age: 35</p>
+                <p>Health Conditions: Diabetes, Hypertension</p>
+            </div>
+
+            <div>
+                <h3>Doctor Profile</h3>
+                <p>Name: Dr. Priya Reddy</p>
+                <p>Specialty: Cardiologist</p>
+                <p>Experience: 10 years</p>
+            </div>
+        </section>
+
+        <!-- Telemedicine Capabilities -->
+        <section id="telemedicine">
+            <h2>Telemedicine</h2>
+            <p>Connect with your doctor via video calls or messaging for consultations.</p>
+            <button id="startVideoCall">Start Video Call</button>
+            <button id="sendMessage">Send Message</button>
+        </section>
+
+        <!-- Health Data Integration -->
+        <section id="healthDataIntegration">
+            <h2>Integration with Health Platforms</h2>
+            <p>Integrate your health data from Google Fit or Apple Health for better health tracking.</p>
+            <button id="syncHealthData">Sync Health Data</button>
+        </section>
+
+        <!-- Medication Reminders -->
+        <section id="medicationReminders">
+            <h2>Medication Reminders</h2>
+            <p>Receive reminders for your medications.</p>
+            <button id="setReminder">Set Reminder</button>
+        </section>
+
+        <!-- Secure Payment Options -->
+        <section id="paymentOptions">
+            <h2>Secure Payment Options</h2>
+            <p>Make secure payments for consultations, treatments, or medications.</p>
+            <button id="makePayment">Make a Payment</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Arogya Sathi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey and Interview Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Survey & Interview Management - Hospitals</h1>
+    </header>
+
+    <main>
+        <!-- Conduct Interviews -->
+        <section id="conductInterviews">
+            <h2>Conduct Interviews</h2>
+            <p>Select the type of hospital and mode of contact for interviews with staff (administrators, IT personnel, healthcare providers).</p>
+
+            <label for="hospitalType">Type of Hospital:</label>
+            <select id="hospitalType">
+                <option value="public">Public Hospital</option>
+                <option value="private">Private Hospital</option>
+            </select>
+
+            <label for="hospitalSize">Hospital Size:</label>
+            <select id="hospitalSize">
+                <option value="large">Large Multi-Specialty</option>
+                <option value="small">Small Clinic</option>
+            </select>
+
+            <label for="hospitalLocation">Hospital Location:</label>
+            <select id="hospitalLocation">
+                <option value="urban">Urban</option>
+                <option value="rural">Rural</option>
+            </select>
+
+            <label for="contactMethod">Choose Contact Method:</label>
+            <select id="contactMethod">
+                <option value="in-person">In-person Meeting</option>
+                <option value="video">Video Conferencing</option>
+                <option value="survey">Online Survey (Google Forms, SurveyMonkey)</option>
+            </select>
+
+            <button id="scheduleInterview">Schedule Interview</button>
+        </section>
+
+        <!-- Video Conferencing Tools -->
+        <section id="videoConference">
+            <h2>Video Conferencing Tools</h2>
+            <p>Connect via video conferencing tools to interview hospital staff remotely.</p>
+            <button id="startZoom">Start Zoom Call</button>
+            <button id="startGoogleMeet">Start Google Meet Call</button>
+        </section>
+
+        <!-- Online Survey -->
+        <section id="onlineSurvey">
+            <h2>Online Survey Tools</h2>
+            <p>Create and distribute surveys using Google Forms or SurveyMonkey to collect feedback from hospital staff.</p>
+            <button id="createGoogleForm">Create Google Form</button>
+            <button id="createSurveyMonkey">Create SurveyMonkey Form</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Arogya Sathi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Icons and Photos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hospitals in Hyderabad</h1>
+    </header>
+
+    <main>
+        <!-- Hospital Image Icons and Photos Section -->
+        <section id="hospitalImages">
+            <h2>Hospital Icons and Photos</h2>
+            
+            <!-- Hospital 1 -->
+            <div class="hospital">
+                <img src="hospital1-icon.png" alt="Apollo Hospital Icon" class="hospital-icon">
+                <h3>Apollo Hospitals</h3>
+                <img src="hospital1-photo.jpg" alt="Apollo Hospital" class="hospital-photo">
+            </div>
+
+            <!-- Hospital 2 -->
+            <div class="hospital">
+                <img src="hospital2-icon.png" alt="Care Hospital Icon" class="hospital-icon">
+                <h3>Care Hospitals</h3>
+                <img src="hospital2-photo.jpg" alt="Care Hospital" class="hospital-photo">
+            </div>
+
+            <!-- Hospital 3 -->
+            <div class="hospital">
+                <img src="hospital3-icon.png" alt="KIMS Hospital Icon" class="hospital-icon">
+                <h3>KIMS Hospitals</h3>
+                <img src="hospital3-photo.jpg" alt="KIMS Hospital" class="hospital-photo">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Arogya Sathi</p>
+    </footer>
+</body>
+</html>
+<img src="images/my-hospital-icon.png" alt="My Hospital Icon" class="hospital-icon">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arogya Sathi App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Arogya Sathi Logo -->
+        <div id="logo-container">
+            <img src="logo-1.png" alt="Arogya Sathi Logo" id="app-logo">
+        </div>
+        <h1>Arogya Sathi Healthcare App</h1>
+    </header>
+
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>24/7 Emergency, Online Consultations, Insurance Plans, Budgeting for Healthcare, and More.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Arogya Sathi</p>
+    </footer>
+</body>
+</html>
+<img src="logo-1.png" alt="Arogya Sathi Logo" id="app-logo">
+
